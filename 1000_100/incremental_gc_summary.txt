@@ -1,0 +1,65 @@
+--------------------------------------------------------------------------------
+Profile data file 'incremental_gc.callgrind' (creator: callgrind-3.18.1)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 0 - 248884207
+Trigger: Program termination
+Profiled target:  ./incremental_gc (PID 15091, part 1)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                     
+--------------------------------------------------------------------------------
+1,247,745,738 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                    file:function
+--------------------------------------------------------------------------------
+208,349,418 (16.70%)  ./malloc/./malloc/malloc.c:_int_malloc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+119,860,257 ( 9.61%)  ./malloc/./malloc/malloc.c:_int_free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+102,674,717 ( 8.23%)  ???:luaV_execute [/home/datta/Documents/SEM-7/DOCS/Assignment1/incremental_gc]
+ 84,886,918 ( 6.80%)  ???:luaH_resize [/home/datta/Documents/SEM-7/DOCS/Assignment1/incremental_gc]
+ 82,134,145 ( 6.58%)  ???:luaH_newkey [/home/datta/Documents/SEM-7/DOCS/Assignment1/incremental_gc]
+ 78,397,967 ( 6.28%)  ???:propagatemark [/home/datta/Documents/SEM-7/DOCS/Assignment1/incremental_gc]
+ 70,342,696 ( 5.64%)  ./malloc/./malloc/malloc.c:malloc_consolidate [/usr/lib/x86_64-linux-gnu/libc.so.6]
+ 61,608,877 ( 4.94%)  ./malloc/./malloc/malloc.c:malloc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+ 48,929,537 ( 3.92%)  ./malloc/./malloc/malloc.c:realloc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+ 30,851,442 ( 2.47%)  ./malloc/./malloc/malloc.c:free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+ 29,982,065 ( 2.40%)  ./malloc/./malloc/malloc.c:unlink_chunk.constprop.0 [/usr/lib/x86_64-linux-gnu/libc.so.6]
+ 23,317,190 ( 1.87%)  ???:reallymarkobject [/home/datta/Documents/SEM-7/DOCS/Assignment1/incremental_gc]
+ 23,119,829 ( 1.85%)  ???:mainpositionTV.isra.0 [/home/datta/Documents/SEM-7/DOCS/Assignment1/incremental_gc]
+ 22,277,649 ( 1.79%)  ???:l_alloc [/home/datta/Documents/SEM-7/DOCS/Assignment1/incremental_gc]
+ 21,829,392 ( 1.75%)  ???:singlestep [/home/datta/Documents/SEM-7/DOCS/Assignment1/incremental_gc]
+ 20,834,034 ( 1.67%)  ???:luaM_malloc_ [/home/datta/Documents/SEM-7/DOCS/Assignment1/incremental_gc]
+ 20,047,650 ( 1.61%)  ???:luaV_finishset [/home/datta/Documents/SEM-7/DOCS/Assignment1/incremental_gc]
+ 19,632,858 ( 1.57%)  ???:luaM_free_ [/home/datta/Documents/SEM-7/DOCS/Assignment1/incremental_gc]
+ 19,504,472 ( 1.56%)  ???:luaH_getint [/home/datta/Documents/SEM-7/DOCS/Assignment1/incremental_gc]
+ 18,586,148 ( 1.49%)  ???:luaM_realloc_ [/home/datta/Documents/SEM-7/DOCS/Assignment1/incremental_gc]
+ 16,421,800 ( 1.32%)  ???:sweepstep.constprop.0 [/home/datta/Documents/SEM-7/DOCS/Assignment1/incremental_gc]
+ 15,392,215 ( 1.23%)  ???:luaH_realasize [/home/datta/Documents/SEM-7/DOCS/Assignment1/incremental_gc]
+ 14,822,598 ( 1.19%)  ???:luaH_free [/home/datta/Documents/SEM-7/DOCS/Assignment1/incremental_gc]
+ 12,626,649 ( 1.01%)  ???:luaC_newobj [/home/datta/Documents/SEM-7/DOCS/Assignment1/incremental_gc]
+ 11,069,749 ( 0.89%)  ./malloc/./malloc/malloc.c:_int_realloc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+ 10,614,000 ( 0.85%)  ???:luaH_get [/home/datta/Documents/SEM-7/DOCS/Assignment1/incremental_gc]
+ 10,408,861 ( 0.83%)  ???:luaH_newkey'2 [/home/datta/Documents/SEM-7/DOCS/Assignment1/incremental_gc]
+  9,020,480 ( 0.72%)  ???:freeobj [/home/datta/Documents/SEM-7/DOCS/Assignment1/incremental_gc]
+  9,015,315 ( 0.72%)  ???:luaH_new [/home/datta/Documents/SEM-7/DOCS/Assignment1/incremental_gc]
+  6,111,107 ( 0.49%)  ???:luaC_step [/home/datta/Documents/SEM-7/DOCS/Assignment1/incremental_gc]
+  5,472,442 ( 0.44%)  ???:luaO_ceillog2 [/home/datta/Documents/SEM-7/DOCS/Assignment1/incremental_gc]
+  4,206,981 ( 0.34%)  ./malloc/./malloc/arena.c:free
+  3,218,722 ( 0.26%)  ???:0x000000000010da10 [???]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./malloc/./malloc/arena.c
+  ./malloc/./malloc/malloc.c
+
