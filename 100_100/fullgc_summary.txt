@@ -1,0 +1,67 @@
+--------------------------------------------------------------------------------
+Profile data file 'fullgc.callgrind' (creator: callgrind-3.18.1)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 0 - 21594616
+Trigger: Program termination
+Profiled target:  ./fullgc (PID 18583, part 1)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                   
+--------------------------------------------------------------------------------
+107,946,707 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                   file:function
+--------------------------------------------------------------------------------
+15,327,311 (14.20%)  ./malloc/./malloc/malloc.c:_int_malloc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+11,997,187 (11.11%)  ./malloc/./malloc/malloc.c:_int_free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+10,267,963 ( 9.51%)  ???:luaV_execute [/home/datta/Documents/SEM-7/DOCS/Assignment1/fullgc]
+ 8,498,249 ( 7.87%)  ???:luaH_resize [/home/datta/Documents/SEM-7/DOCS/Assignment1/fullgc]
+ 8,231,920 ( 7.63%)  ???:luaH_newkey [/home/datta/Documents/SEM-7/DOCS/Assignment1/fullgc]
+ 6,454,569 ( 5.98%)  ???:propagatemark [/home/datta/Documents/SEM-7/DOCS/Assignment1/fullgc]
+ 6,141,404 ( 5.69%)  ./malloc/./malloc/malloc.c:malloc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+ 4,902,236 ( 4.54%)  ./malloc/./malloc/malloc.c:realloc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+ 3,091,842 ( 2.86%)  ./malloc/./malloc/malloc.c:free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+ 2,326,049 ( 2.15%)  ???:mainpositionTV.isra.0 [/home/datta/Documents/SEM-7/DOCS/Assignment1/fullgc]
+ 2,232,831 ( 2.07%)  ???:l_alloc [/home/datta/Documents/SEM-7/DOCS/Assignment1/fullgc]
+ 2,090,634 ( 1.94%)  ???:luaM_malloc_ [/home/datta/Documents/SEM-7/DOCS/Assignment1/fullgc]
+ 2,011,567 ( 1.86%)  ???:luaV_finishset [/home/datta/Documents/SEM-7/DOCS/Assignment1/fullgc]
+ 1,967,658 ( 1.82%)  ???:luaM_free_ [/home/datta/Documents/SEM-7/DOCS/Assignment1/fullgc]
+ 1,950,758 ( 1.81%)  ???:luaH_getint [/home/datta/Documents/SEM-7/DOCS/Assignment1/fullgc]
+ 1,940,075 ( 1.80%)  ???:reallymarkobject [/home/datta/Documents/SEM-7/DOCS/Assignment1/fullgc]
+ 1,860,479 ( 1.72%)  ???:luaM_realloc_ [/home/datta/Documents/SEM-7/DOCS/Assignment1/fullgc]
+ 1,787,170 ( 1.66%)  ???:singlestep [/home/datta/Documents/SEM-7/DOCS/Assignment1/fullgc]
+ 1,482,798 ( 1.37%)  ???:luaH_free [/home/datta/Documents/SEM-7/DOCS/Assignment1/fullgc]
+ 1,460,025 ( 1.35%)  ???:luaH_realasize [/home/datta/Documents/SEM-7/DOCS/Assignment1/fullgc]
+ 1,382,740 ( 1.28%)  ???:sweepstep.constprop.0 [/home/datta/Documents/SEM-7/DOCS/Assignment1/fullgc]
+ 1,267,749 ( 1.17%)  ???:luaC_newobj [/home/datta/Documents/SEM-7/DOCS/Assignment1/fullgc]
+ 1,108,088 ( 1.03%)  ./malloc/./malloc/malloc.c:_int_realloc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+ 1,066,703 ( 0.99%)  ???:luaH_get [/home/datta/Documents/SEM-7/DOCS/Assignment1/fullgc]
+ 1,049,083 ( 0.97%)  ???:luaH_newkey'2 [/home/datta/Documents/SEM-7/DOCS/Assignment1/fullgc]
+   906,980 ( 0.84%)  ???:freeobj [/home/datta/Documents/SEM-7/DOCS/Assignment1/fullgc]
+   901,815 ( 0.84%)  ???:luaH_new [/home/datta/Documents/SEM-7/DOCS/Assignment1/fullgc]
+   607,149 ( 0.56%)  ./malloc/./malloc/malloc.c:malloc_consolidate [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   547,605 ( 0.51%)  ???:luaO_ceillog2 [/home/datta/Documents/SEM-7/DOCS/Assignment1/fullgc]
+   500,831 ( 0.46%)  ???:luaC_step [/home/datta/Documents/SEM-7/DOCS/Assignment1/fullgc]
+   421,581 ( 0.39%)  ./malloc/./malloc/arena.c:free
+   322,516 ( 0.30%)  ???:0x000000000010da10 [???]
+   281,174 ( 0.26%)  ???:0x000000000010d630 [???]
+   279,496 ( 0.26%)  ???:luaH_finishset [/home/datta/Documents/SEM-7/DOCS/Assignment1/fullgc]
+   271,364 ( 0.25%)  ./malloc/./malloc/malloc.c:unlink_chunk.constprop.0 [/usr/lib/x86_64-linux-gnu/libc.so.6]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./malloc/./malloc/arena.c
+  ./malloc/./malloc/malloc.c
+
